@@ -26,9 +26,9 @@ jobs:
     - name: 修改步数
       run: python3 changebushu_Action.py
       env:
-        USER_PHONE: ${{19811869008}}
-        USER_PWD: ${{wxy15865726726@}}
-        STEP: ${{ secrets.STEP }}
-        STEP_MIN: ${{25000}}
-        STEP_MAX: ${{30000}}
+        USER_PHONE: "19811869008"  # 直接写入手机号
+        USER_PWD: "wxy15865726726@"  # 直接写入密码
+        STEP: "27000"  # 确定的步数值。如果要随机步数，可以删除此行。
+        STEP_MIN: "25000"  # 随机步数的最小值
+        STEP_MAX: "30000"  # 随机步数的最大值
       
